@@ -1,0 +1,21 @@
+{
+  "name": "discord-rating-bot",
+  "version": "1.0.0",
+  "description": "Discord bot to rate players and show leaderboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "register": "node deploy-commands.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^1.6.0",
+    "discord-api-types": "^0.37.34",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3",
+    "register": "^0.0.0",
+    "run": "^1.5.0",
+    "start": "^5.1.0"
+  }
+}
