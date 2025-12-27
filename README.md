@@ -3,9 +3,9 @@
 This is a minimal Discord bot that allows privileged users to rate players (field players or goalkeepers), stores ratings, and shows a simple leaderboard.
 
 Features
-- /rate @player — interactive UI to rate a player (role-restricted via RATER_ROLE_ID)
-- /myratings [player] — view ratings for yourself or another player
-- /leaderboard — show top players by average rating
+- /rate @player - interactive UI to rate a player (role-restricted via RATER_ROLE_ID)
+- /myratings [player] - view ratings for yourself or another player
+- /leaderboard - show top players by average rating
 
 Quick setup
 1. Create a bot application on the Discord Developer Portal and copy the Bot Token, Client ID.
@@ -42,8 +42,3 @@ Notes and limitations
 - The interactive UI uses ephemeral messages for the rater and posts the final announcement into the channel where `/rate` was invoked.
 - Comments are added per-attribute via buttons; ratings are selected via select menus.
 - The code includes a simple role check using `RATER_ROLE_ID` environment variable.
-
-Next steps (optional improvements)
-- Add pagination for `/myratings` and better formatting (embeds)
-- Add robust session-key handling, cleanup, and timeouts
-- Replace JSON storage with a database (SQLite, PostgreSQL, etc.)
